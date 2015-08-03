@@ -14,7 +14,7 @@ syn match snesDirective "\.\w\+\>"
 syn match snesLabel "\%(@\|[~_]\{0,2\}\)[a-z_]\w*:\?"
 
 syn match snesComment ";.*$" contains=snesTodo
-syn region snesComment start="/\**" end="\*/"
+syn region snesComment start="/\*" end="\*/"
 
 syn region snesString start="\""  skip=+\\"+ end="\"\|$"
 syn region snesString start="'"   skip=+\\'+ end="'\|$"
